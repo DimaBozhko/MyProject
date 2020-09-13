@@ -1,0 +1,6 @@
+node_modules/
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
