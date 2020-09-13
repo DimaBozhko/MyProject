@@ -20,17 +20,6 @@ function style () {
   	.pipe(browserSync.stream())
 };
 
-exports.minimg = () => (
-    gulp.src('source/img/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
-);
-gulp.task('mincss', () => {
-  return gulp.src('source/css/style.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist/css'));
-});
-
 function watch () {
 	browserSync.init({
 		server: {
@@ -40,6 +29,19 @@ function watch () {
 	gulp.watch("source/scss/**/*.scss", style);
 	gulp.watch("source/*.html").on("change", browserSync.reload);
 };
+
+exports.minimg = () => (
+    gulp.src('source/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'))
+);
+
+exports.mincss = () => (
+	gulp.src('source/css/style.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/css'))
+);
+
 
 exports.style = style;
 exports.watch = watch;
