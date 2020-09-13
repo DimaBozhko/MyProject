@@ -1,0 +1,19 @@
+
+.map {
+	width: 100%;
+	.map__img {
+		width: 100%;
+	}
+}
+@media screen and (min-width: $tb-size) {
+	.map {
+		.map__img {
+		}
+	}	
+}
+@media screen and (min-width: $ds-size) {
+	.map {
+		.map__img {
+		}
+	}		
+}

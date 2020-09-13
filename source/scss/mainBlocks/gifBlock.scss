@@ -1,0 +1,99 @@
+.gif-block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.gif-picture {
+		width: 100%;
+		.gif-block__img {
+			width: 100%;
+		}
+	}
+	.gif-block__gif-icon {
+		position: absolute;
+		top: 50px;
+		width: 50px;
+		height: 50px;
+		fill: white;
+	}
+	.gif-block__text {
+		position: absolute;
+		bottom: 40px;
+		color: white;
+		font-weight: 700;
+		text-align: center;
+		.gif-block__text--display {
+			display: block;
+		}
+	}
+}
+.gif-block--margin-padding {
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+@media screen and (min-width: $tb-size) {
+	.gif-block {
+		flex-direction: row;
+		.gif-picture {
+			.gif-block__img {
+			}
+		}
+		.gif-block__gif-icon {
+			top: auto;
+			left: 16vw;
+			width: 65px;
+			height: 65px;
+		}
+		.gif-block__text {
+			bottom: auto;
+			right: 18vw;
+			text-align: start;
+			.gif-block__text--display {
+			}
+		}
+	}
+	.gif-block--margin-padding {
+		margin-bottom: 60px;
+	}
+}
+@media screen and (min-width: $ds-size) {
+	.gif-block {
+		width: 40%;
+		max-width: 310px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.gif-picture {
+			width: 100%;
+			.gif-block__img {
+				width: 100%;
+			}
+		}
+		.gif-block__gif-icon {
+			position: absolute;
+			top: 110px;
+			left: auto;
+			width: 65px;
+			height: 65px;
+			fill: white;
+		}
+		.gif-block__text {
+			position: absolute;
+			bottom: 80px;
+			right: auto;
+			color: white;
+			font-weight: 700;
+			text-align: center;
+			.gif-block__text--display {
+				display: block;
+			}
+		}
+	}
+	.gif-block--margin-padding {
+		padding: 0;
+		margin-bottom: 20px;
+		margin-top: -60px;
+		margin-right: 40px;
+	}	
+}

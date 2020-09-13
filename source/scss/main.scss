@@ -1,0 +1,29 @@
+
+.main {
+	.catalog {
+		@import "mainBlocks/catalogHeadline.scss";
+		@import "mainBlocks/catalogItem.scss";
+		@import "mainBlocks/showMore.scss";
+		@import "mainBlocks/additionalGoodsHeadline.scss";
+		@import "mainBlocks/additionalGoods.scss";		
+		@import "mainBlocks/gifBlock.scss";		
+	}
+	@import "mainBlocks/contact.scss";	
+	@import "mainBlocks/map.scss";	
+	@media screen and (min-width: $tb-size) {
+		.catalog {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	@media screen and (min-width: $ds-size) {
+		.catalog {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: stretch;
+			justify-content: space-between;
+		}
+	}
+}
