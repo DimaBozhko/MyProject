@@ -5,6 +5,6 @@
 4. Минифицированые файлы находятся в папке dist.
 
 # Tasks
-1.watch
-2.mincss
-3.minimg
+1. watch
+2. mincss
+3. minimg
