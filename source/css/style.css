@@ -915,6 +915,9 @@ button {
   .footer .footer__headline .footer__headline--margin-padding {
     padding: 20px 0; }
 
+.footer .footer__headline--margin-padding {
+  padding: 20px 0; }
+
 .footer .wrapper-icon {
   width: 55%;
   margin: 0 auto;

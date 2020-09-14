@@ -30,10 +30,11 @@ function watch () {
 	gulp.watch("source/*.html").on("change", browserSync.reload);
 };
 
-exports.minimg = () => (
-    gulp.src('source/img/*')
+ exports.minimg = () => (
+     gulp.src('source/img/*.jpg')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'))
+        .pipe(gulp.dest('dist/img')) 
+
 );
 
 exports.mincss = () => (
@@ -45,4 +46,3 @@ exports.mincss = () => (
 
 exports.style = style;
 exports.watch = watch;
-
